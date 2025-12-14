@@ -10,6 +10,7 @@ import { SportsTitleSlide } from '@/components/SportsTitleSlide';
 import { SportsPortfolioSlide } from '@/components/SportsPortfolioSlide';
 import { SportsStrategySlide } from '@/components/SportsStrategySlide';
 import { SportsFinancialsSlide } from '@/components/SportsFinancialsSlide';
+import { FootballFinancialsSlide } from '@/components/FootballFinancialsSlide';
 import { EsportsSlide } from '@/components/EsportsSlide';
 import { FightLeagueSlide } from '@/components/FightLeagueSlide';
 import { AdvertisingTitleSlide } from '@/components/AdvertisingTitleSlide';
@@ -462,7 +463,16 @@ export default function Home() {
         </Card>
       </Slide>
 
-      {/* Slide 13: Esports Ecosystem */}
+      {/* Slide 13: Football Financials */}
+      <Slide>
+        <Card>
+          <div className="flex-1 min-h-0">
+            <FootballFinancialsSlide />
+          </div>
+        </Card>
+      </Slide>
+
+      {/* Slide 14: Esports Ecosystem */}
       <Slide>
         <Card>
            <div className="flex justify-between items-baseline mb-8 border-b border-neutral-800 pb-6 shrink-0">
@@ -711,25 +721,7 @@ export default function Home() {
         </Card>
       </Slide>
 
-      {/* Slide 38: Expense Roadmap */}
-      <Slide>
-        <Card>
-          <div className="w-full h-full">
-            <ExpenseRoadmapSlide />
-          </div>
-        </Card>
-      </Slide>
-
-      {/* Slide 39: Revenue Roadmap */}
-      <Slide>
-        <Card>
-          <div className="w-full h-full">
-            <RevenueRoadmapSlide />
-          </div>
-        </Card>
-      </Slide>
-
-      {/* Slide 40: Pricing Tiers */}
+      {/* Slide 38: Pricing Tiers */}
       <Slide>
         <Card>
           <div className="w-full h-full">
@@ -738,11 +730,29 @@ export default function Home() {
         </Card>
       </Slide>
 
-      {/* Slide 41: Team Structure */}
+      {/* Slide 39: Team Structure */}
       <Slide>
         <Card>
           <div className="w-full h-full">
             <TeamStructureSlide />
+          </div>
+        </Card>
+      </Slide>
+
+      {/* Slide 40: Expense Roadmap */}
+      <Slide>
+        <Card>
+          <div className="w-full h-full">
+            <ExpenseRoadmapSlide />
+          </div>
+        </Card>
+      </Slide>
+
+      {/* Slide 41: Revenue Roadmap */}
+      <Slide>
+        <Card>
+          <div className="w-full h-full">
+            <RevenueRoadmapSlide />
           </div>
         </Card>
       </Slide>
