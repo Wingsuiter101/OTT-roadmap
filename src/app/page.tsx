@@ -39,12 +39,12 @@ import { TeamStructureSlide } from '@/components/TeamStructureSlide';
 import { TimelineRiskSlide } from '@/components/TimelineRiskSlide';
 
 const Card = ({ children, className = '' }: { children: ReactNode; className?: string }) => (
-  <div className={`bg-neutral-900/50 border border-neutral-800 backdrop-blur-sm p-8 md:p-12 rounded-3xl w-full h-full shadow-2xl relative overflow-hidden flex flex-col ${className}`}>
+  <div className={`bg-neutral-900/50 border border-neutral-800 backdrop-blur-sm p-6 md:p-10 rounded-3xl w-full h-full shadow-2xl relative overflow-hidden flex flex-col ${className}`}>
     {/* Decorative gradient blob */}
     <div className="absolute -top-20 -right-20 w-96 h-96 bg-[var(--color-primary)] opacity-5 blur-[120px] rounded-full pointer-events-none"></div>
     <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-white opacity-5 blur-[120px] rounded-full pointer-events-none"></div>
     
-    <div className="relative z-10 w-full h-full flex flex-col overflow-y-auto custom-scrollbar">
+    <div className="relative z-10 w-full h-full flex flex-col overflow-y-auto custom-scrollbar pr-2">
       {children}
     </div>
   </div>

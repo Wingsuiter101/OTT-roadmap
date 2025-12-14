@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 
 export const KidsContentSlide = () => {
   return (
@@ -33,11 +35,20 @@ export const KidsContentSlide = () => {
                 </p>
 
                 <div className="mt-auto">
-                   <div className="aspect-video bg-neutral-800 rounded-xl border border-neutral-700 flex items-center justify-center relative group-hover:scale-[1.02] transition-transform duration-500">
-                      <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center pl-1">
-                         <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg>
+                   <div className="aspect-video bg-neutral-800 rounded-xl border border-neutral-700 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+                      <Image
+                        src={getAssetPath("/Nepali-rachel.png")}
+                        alt="Nepali Ms. Rachel"
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                         <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center pl-1 hover:bg-white/30 transition-colors cursor-pointer">
+                            <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg>
+                         </div>
                       </div>
-                      <div className="absolute bottom-4 left-4 bg-black/50 px-2 py-1 rounded text-xs font-mono text-white">EPISODE 1: NAMASTE</div>
+                      <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-2 py-1 rounded text-xs font-mono text-white border border-white/10">EPISODE 1: NAMASTE</div>
                    </div>
                 </div>
              </div>

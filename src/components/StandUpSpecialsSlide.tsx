@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 
 export const StandUpSpecialsSlide = () => {
   return (
@@ -41,45 +43,45 @@ export const StandUpSpecialsSlide = () => {
 
           {/* Talent Placeholders - Grand Posters */}
           <div className="lg:col-span-8 grid grid-cols-3 gap-4 h-full">
-                {/* Talent 1 */}
+                {/* Talent 1 - Aayush Shrestha */}
                 <div className="relative group rounded-2xl overflow-hidden bg-neutral-800 border border-neutral-700 hover:border-[var(--color-primary)] transition-all duration-500 h-full">
-                   <div className="absolute inset-0 bg-neutral-900 flex flex-col items-center justify-center text-center p-4 group-hover:scale-105 transition-transform duration-700">
-                      <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
-                      <div className="w-24 h-24 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center text-neutral-600 mb-4 z-0">
-                         <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                      </div>
-                      <span className="text-xs font-mono text-gray-600 uppercase tracking-widest z-0">Poster Image</span>
-                   </div>
+                   <Image
+                     src={getAssetPath("/Aayus.jpg")}
+                     alt="Aayush Shrestha"
+                     fill
+                     className="object-cover group-hover:scale-105 transition-transform duration-700"
+                   />
+                   <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
                    <div className="absolute bottom-0 inset-x-0 p-6 z-20">
                       <h4 className="text-white font-black text-2xl leading-none mb-2 group-hover:text-[var(--color-primary)] transition-colors">AAYUSH<br/>SHRESTHA</h4>
                       <div className="h-1 w-12 bg-[var(--color-primary)] rounded-full"></div>
                    </div>
                 </div>
 
-                {/* Talent 2 */}
+                {/* Talent 2 - Apoorwa Kshitiz */}
                 <div className="relative group rounded-2xl overflow-hidden bg-neutral-800 border border-neutral-700 hover:border-[var(--color-primary)] transition-all duration-500 h-full mt-8 mb-0 lg:mt-0 lg:-translate-y-4 shadow-2xl z-10">
-                   <div className="absolute inset-0 bg-neutral-900 flex flex-col items-center justify-center text-center p-4 group-hover:scale-105 transition-transform duration-700">
-                      <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
-                      <div className="w-24 h-24 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center text-neutral-600 mb-4 z-0">
-                         <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                      </div>
-                      <span className="text-xs font-mono text-gray-600 uppercase tracking-widest z-0">Poster Image</span>
-                   </div>
+                   <Image
+                     src={getAssetPath("/apoorva.jpeg")}
+                     alt="Apoorwa Kshitiz"
+                     fill
+                     className="object-cover group-hover:scale-105 transition-transform duration-700"
+                   />
+                   <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
                    <div className="absolute bottom-0 inset-x-0 p-6 z-20">
                       <h4 className="text-white font-black text-2xl leading-none mb-2 group-hover:text-[var(--color-primary)] transition-colors">APOORWA<br/>KSHITIZ</h4>
                       <div className="h-1 w-12 bg-[var(--color-primary)] rounded-full"></div>
                    </div>
                 </div>
 
-                {/* Talent 3 */}
+                {/* Talent 3 - Sita Neupane */}
                 <div className="relative group rounded-2xl overflow-hidden bg-neutral-800 border border-neutral-700 hover:border-[var(--color-primary)] transition-all duration-500 h-full">
-                   <div className="absolute inset-0 bg-neutral-900 flex flex-col items-center justify-center text-center p-4 group-hover:scale-105 transition-transform duration-700">
-                      <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
-                      <div className="w-24 h-24 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center text-neutral-600 mb-4 z-0">
-                         <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                      </div>
-                      <span className="text-xs font-mono text-gray-600 uppercase tracking-widest z-0">Poster Image</span>
-                   </div>
+                   <Image
+                     src={getAssetPath("/sita.png")}
+                     alt="Sita Neupane"
+                     fill
+                     className="object-cover group-hover:scale-105 transition-transform duration-700"
+                   />
+                   <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
                    <div className="absolute bottom-0 inset-x-0 p-6 z-20">
                       <h4 className="text-white font-black text-2xl leading-none mb-2 group-hover:text-[var(--color-primary)] transition-colors">SITA<br/>NEUPANE</h4>
                       <div className="h-1 w-12 bg-[var(--color-primary)] rounded-full"></div>
