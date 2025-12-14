@@ -344,7 +344,7 @@ export default function Home() {
                       alt="DHGO Logo" 
                       width={800} 
                       height={320} 
-                      className="object-contain w-full h-full scale-[1.35]"
+                      className="object-contain w-full h-full scale-[1.0]"
                     />
                   </div>
                   <div className="absolute bottom-2 text-xs font-mono text-white/50 bg-black/30 px-3 py-1 rounded-full border border-white/10 z-10">All New UI/UX</div>
