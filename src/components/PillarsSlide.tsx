@@ -15,28 +15,28 @@ const pillars = [
     id: 2,
     title: "Entertainment",
     role: "Retention Engine",
-    details: ["Flagship Reality", "Drama Series", "Game Shows"],
+    details: ["Flagship Crime Thriller", "Regional Comedy", "Slice-of-Life Drama"],
     description: "Weekly habits are built here. Consistent, high-quality engagement."
   },
   {
     id: 3,
     title: "Specials",
     role: "Viral Engine",
-    details: ["Stand-up Comedy", "Music Festivals", "Award Galas"],
+    details: ["Stand-Up Specials", "Music Launchpad", "Concert Films"],
     description: "Cultural moments that dominate social conversation."
   },
   {
     id: 4,
     title: "Cinema",
     role: "Prestige & Mainstream",
-    details: ["First-Run Premieres", "Library Classics", "Indie Films"],
+    details: ["Festival Films", "Movie Windowing", "TVOD → SVOD"],
     description: "The premium movie theater experience, at home."
   },
   {
     id: 5,
     title: "Kids",
     role: "Churn Killer",
-    details: ["Localized Cartoons", "Edutainment", "Safe Space"],
+    details: ["Nepali Ms. Rachel", "Nostalgia Classics", "Gen-AI Studio"],
     description: "Parents stay subscribed when the kids are happy."
   }
 ];
