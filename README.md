@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DHGO - OTT Platform Roadmap Presentation
+
+A sleek, interactive slide deck showcasing the strategic roadmap for DHGO (formerly Dishhome Go), a Nepali streaming platform.
+
+## Features
+
+- 🎨 Ultra-modern design with Tailwind CSS v4
+- ⚡ Smooth animations with Framer Motion
+- 🎯 Interactive elements and hover effects
+- 📱 Fully responsive layout
+- ⌨️ Keyboard navigation (Arrow keys, Space)
+- 🖱️ Mouse navigation (click zones)
+- 📍 Jump navigation sidebar
+- 🔄 State persistence across page refreshes
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Font**: Geist (Google Fonts)
+- **Deployment**: GitHub Pages
 
 ## Getting Started
 
-First, run the development server:
+### Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Create production build
+npm run build
+```
 
-## Learn More
+The static files will be generated in the `out` directory.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Manual Deployment to gh-pages Branch
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Deploy to GitHub Pages
+npm run deploy
+```
 
-## Deploy on Vercel
+This command will:
+1. Build the project with production settings
+2. Create the `.nojekyll` file automatically
+3. Deploy the `out` folder to the `gh-pages` branch
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Setup GitHub Pages:**
+1. Go to repository settings
+2. Navigate to **Pages** → **Build and deployment**
+3. Set **Source** to "Deploy from a branch"
+4. Set **Branch** to `gh-pages` and folder to `/ (root)`
+5. Save and wait for deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Live URL:** `https://wingsuiter101.github.io/OTT-roadmap/`
+
+**Note:** The first deployment may take a few minutes to go live.
+
+## Navigation
+
+- **Arrow Right / Space**: Next slide
+- **Arrow Left**: Previous slide
+- **Mouse Click**: Click right side of screen to advance, left side to go back
+- **Sidebar**: Click slide numbers to jump directly
+- **Progress Dots**: Visual indicator at bottom center
+
+## Project Structure
+
+```
+slide-deck/
+├── src/
+│   ├── app/
+│   │   ├── globals.css       # Global styles & color palette
+│   │   ├── layout.tsx        # Root layout with fonts
+│   │   └── page.tsx          # Main slide orchestration
+│   └── components/
+│       ├── Deck.tsx          # Slide deck navigation logic
+│       ├── Slide.tsx         # Individual slide wrapper
+│       └── [Various slide components]
+├── public/
+│   └── [Images and assets]
+├── .github/
+│   └── workflows/
+│       └── deploy.yml        # GitHub Actions workflow
+└── next.config.ts            # Next.js config for static export
+```
+
+## Color Palette
+
+- **Primary**: `#FF2E2E` (Vibrant Modern Red)
+- **Dark**: `#0A0A0A` (Sleek Black)
+- **Light**: `#FAFAFA` (Soft White)
+- **Grays**: Tailwind's standard gray scale
+
+## Content Overview
+
+The presentation covers:
+
+1. **Executive Summary** - Core strategy and monetization
+2. **Problem Statement** - Event-driven churn analysis
+3. **DHGO Opportunity** - Strategic framework
+4. **Brand Evolution** - Rebranding from Dishhome Go to DHGO
+5. **5-Pillar Ecosystem** - Content strategy
+6. **Sports** - IP portfolio, strategy, financials
+7. **Entertainment** - Original content, regional programming
+8. **Specials & Events** - Stand-up, music, viral content
+9. **Cinema** - Prestige films & mainstream windowing
+10. **Kids** - DHGO Junior offerings
+11. **Advertising** - Inventory and sponsor packages
+12. **Operations** - Team structure, timeline, financials
+
+## License
+
+Private project for DHGO/BLQ Ventures.
+
+---
+
+Built with ❤️ for the future of Nepali streaming
