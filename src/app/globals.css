@@ -1,24 +1,53 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  
-  --color-primary: #FF2E2E; /* Vibrant Modern Red */
-  --color-dark: #0A0A0A;    /* Sleek Black */
-  --color-light: #FAFAFA;   /* Soft White */
-  
-  /* Grays will be standard Tailwind grays, but we can prioritize specific ones */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-primary: #FF2E2E;
 }
 
-:root {
-  --background: #0A0A0A;
-  --foreground: #FAFAFA;
+@theme {
+  --color-primary: #FF2E2E;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), sans-serif;
-  overflow: hidden; /* Prevent scrolling for slide deck */
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

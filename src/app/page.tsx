@@ -37,12 +37,12 @@ import { TeamStructureSlide } from '@/components/TeamStructureSlide';
 import { TimelineRiskSlide } from '@/components/TimelineRiskSlide';
 
 const Card = ({ children, className = '' }: { children: ReactNode; className?: string }) => (
-  <div className={`bg-neutral-900/50 border border-neutral-800 backdrop-blur-sm p-8 md:p-12 rounded-3xl w-full h-full shadow-2xl relative overflow-hidden flex flex-col justify-center ${className}`}>
+  <div className={`bg-neutral-900/50 border border-neutral-800 backdrop-blur-sm p-8 md:p-12 rounded-3xl w-full h-full shadow-2xl relative overflow-hidden flex flex-col ${className}`}>
     {/* Decorative gradient blob */}
     <div className="absolute -top-20 -right-20 w-96 h-96 bg-[var(--color-primary)] opacity-5 blur-[120px] rounded-full pointer-events-none"></div>
     <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-white opacity-5 blur-[120px] rounded-full pointer-events-none"></div>
     
-    <div className="relative z-10 w-full h-full flex flex-col">
+    <div className="relative z-10 w-full h-full flex flex-col overflow-y-auto custom-scrollbar">
       {children}
     </div>
   </div>
@@ -456,14 +456,6 @@ export default function Home() {
       {/* Slide 12: Sports Financials & Deep Dive */}
       <Slide>
         <Card>
-           <div className="flex justify-between items-baseline mb-8 border-b border-neutral-800 pb-6 shrink-0">
-            <div>
-               <h2 className="text-4xl font-bold tracking-tight mb-2">Sports Economics</h2>
-               <p className="text-gray-400 text-sm font-mono uppercase tracking-wide">ROI Analysis • P&L Breakdown</p>
-            </div>
-            <span className="text-gray-500 font-mono text-sm">12</span>
-          </div>
-          
           <div className="flex-1 min-h-0">
             <SportsFinancialsSlide />
           </div>

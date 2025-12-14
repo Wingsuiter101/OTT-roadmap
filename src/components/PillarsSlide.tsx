@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 
 const pillars = [
   {
@@ -9,35 +11,40 @@ const pillars = [
     title: "Sports",
     role: "Acquisition Engine",
     details: ["Cricket", "Football", "MMA", "Esports"],
-    description: "High-octane live events drive massive top-of-funnel traffic."
+    description: "High-octane live events drive massive top-of-funnel traffic.",
+    image: "/Sports.png"
   },
   {
     id: 2,
     title: "Entertainment",
     role: "Retention Engine",
     details: ["Flagship Crime Thriller", "Regional Comedy", "Slice-of-Life Drama"],
-    description: "Weekly habits are built here. Consistent, high-quality engagement."
+    description: "Weekly habits are built here. Consistent, high-quality engagement.",
+    image: "/Entertainment.png"
   },
   {
     id: 3,
     title: "Specials",
     role: "Viral Engine",
     details: ["Stand-Up Specials", "Music Launchpad", "Concert Films"],
-    description: "Cultural moments that dominate social conversation."
+    description: "Cultural moments that dominate social conversation.",
+    image: "/Specials.png"
   },
   {
     id: 4,
     title: "Cinema",
     role: "Prestige & Mainstream",
     details: ["Festival Films", "Movie Windowing", "TVOD → SVOD"],
-    description: "The premium movie theater experience, at home."
+    description: "The premium movie theater experience, at home.",
+    image: "/Cinema.png"
   },
   {
     id: 5,
     title: "Kids",
     role: "Churn Killer",
     details: ["Nepali Ms. Rachel", "Nostalgia Classics", "Gen-AI Studio"],
-    description: "Parents stay subscribed when the kids are happy."
+    description: "Parents stay subscribed when the kids are happy.",
+    image: "/Kids.png"
   }
 ];
 
@@ -63,9 +70,20 @@ export const PillarsSlide = () => {
           }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src={getAssetPath(pillar.image)}
+              alt={pillar.title}
+              fill
+              className="object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+          </div>
+
           {/* Background Gradient for active state */}
           <div 
-            className={`absolute inset-0 bg-gradient-to-t from-[var(--color-primary)]/20 to-transparent opacity-0 transition-opacity duration-500 ${
+            className={`absolute inset-0 bg-gradient-to-t from-[var(--color-primary)]/20 to-transparent opacity-0 transition-opacity duration-500 z-[1] ${
               hovered === pillar.id ? 'opacity-100' : ''
             }`} 
           />

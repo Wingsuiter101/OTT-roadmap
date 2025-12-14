@@ -1,15 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 
 export const FightLeagueSlide = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full">
       {/* Column 1: The Concept (6 cols) */}
       <div className="lg:col-span-6 flex flex-col h-full bg-neutral-950 border border-neutral-800 rounded-3xl overflow-hidden relative group">
-         {/* Background Image Placeholder */}
-         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 grayscale mix-blend-luminosity group-hover:opacity-30 transition-opacity duration-700"></div>
-         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+         {/* Background Image */}
+         <div className="absolute inset-0 z-0">
+            <Image
+              src={getAssetPath("/Fight-league.png")}
+              alt="The Fight League"
+              fill
+              className="object-cover opacity-20 grayscale mix-blend-luminosity group-hover:opacity-30 transition-opacity duration-700"
+            />
+         </div>
+         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-[1]"></div>
 
          <div className="relative z-10 p-10 flex flex-col h-full justify-end">
             <div className="mb-auto">

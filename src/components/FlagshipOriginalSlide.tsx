@@ -53,6 +53,22 @@ export const FlagshipOriginalSlide = () => {
              <motion.div 
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.25 }}
+                className="bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/30 p-6 rounded-xl"
+             >
+                <div className="flex items-center gap-3 mb-3">
+                   <svg className="w-6 h-6 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                   <h3 className="text-xl font-bold text-white">Pushing Boundaries</h3>
+                </div>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                   Mature themes and bold storytelling that challenges traditional Nepali media norms. 
+                   <span className="text-white font-semibold"> No creative compromises.</span> This is premium content that TV networks can't deliver due to censorship constraints.
+                </p>
+             </motion.div>
+
+             <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
                 className="space-y-2"
              >
