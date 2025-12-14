@@ -249,7 +249,7 @@ export default function Home() {
              {/* Step 1 */}
              <div className="relative h-full">
                 <div className="absolute -top-6 -left-6 text-8xl font-black text-neutral-800 z-0">1</div>
-                <div className="relative z-10 bg-neutral-900 border border-neutral-800 p-8 md:p-10 rounded-3xl h-full flex flex-col justify-center hover:border-white/20 transition-colors">
+                <div className="relative z-10 bg-neutral-900/40 backdrop-blur-md border border-neutral-800 p-8 md:p-10 rounded-3xl h-full flex flex-col justify-center hover:border-white/20 transition-colors">
                   <div className="text-[var(--color-primary)] font-mono text-sm uppercase tracking-widest mb-6">Acquisition</div>
                   <h3 className="text-4xl font-bold mb-6">Win Installs</h3>
                   <p className="text-xl text-gray-400 leading-relaxed">Leverage <span className="text-white font-semibold">Sports</span> events to drive user acquisition at massive scale.</p>
@@ -259,7 +259,7 @@ export default function Home() {
              {/* Step 2 */}
              <div className="relative h-full">
                 <div className="absolute -top-6 -left-6 text-8xl font-black text-neutral-800 z-0">2</div>
-                <div className="relative z-10 bg-neutral-900 border border-neutral-800 p-8 md:p-10 rounded-3xl h-full flex flex-col justify-center hover:border-white/20 transition-colors">
+                <div className="relative z-10 bg-neutral-900/40 backdrop-blur-md border border-neutral-800 p-8 md:p-10 rounded-3xl h-full flex flex-col justify-center hover:border-white/20 transition-colors">
                   <div className="text-[var(--color-primary)] font-mono text-sm uppercase tracking-widest mb-6">Retention (LTV)</div>
                   <h3 className="text-4xl font-bold mb-6">Reduce Churn</h3>
                   <p className="text-xl text-gray-400 leading-relaxed">Deploy weekly <span className="text-white font-semibold">Entertainment + Kids</span> content to keep users engaged daily.</p>
@@ -269,7 +269,7 @@ export default function Home() {
              {/* Step 3 */}
              <div className="relative h-full">
                 <div className="absolute -top-6 -left-6 text-8xl font-black text-neutral-800 z-0">3</div>
-                <div className="relative z-10 bg-neutral-900 border border-neutral-800 p-8 md:p-10 rounded-3xl h-full flex flex-col justify-center hover:border-white/20 transition-colors">
+                <div className="relative z-10 bg-neutral-900/40 backdrop-blur-md border border-neutral-800 p-8 md:p-10 rounded-3xl h-full flex flex-col justify-center hover:border-white/20 transition-colors">
                   <div className="text-[var(--color-primary)] font-mono text-sm uppercase tracking-widest mb-6">Revenue</div>
                   <h3 className="text-4xl font-bold mb-6">Cash Spikes</h3>
                   <p className="text-xl text-gray-400 leading-relaxed">Utilize <span className="text-white font-semibold">TVOD</span> (Fight League + Movies) for high-margin revenue events.</p>
