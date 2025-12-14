@@ -11,6 +11,7 @@ import { SportsPortfolioSlide } from '@/components/SportsPortfolioSlide';
 import { SportsStrategySlide } from '@/components/SportsStrategySlide';
 import { SportsFinancialsSlide } from '@/components/SportsFinancialsSlide';
 import { FootballFinancialsSlide } from '@/components/FootballFinancialsSlide';
+import { OwnedIPsSlide } from '@/components/OwnedIPsSlide';
 import { EsportsSlide } from '@/components/EsportsSlide';
 import { FightLeagueSlide } from '@/components/FightLeagueSlide';
 import { AdvertisingTitleSlide } from '@/components/AdvertisingTitleSlide';
@@ -454,7 +455,16 @@ export default function Home() {
         </Card>
       </Slide>
 
-      {/* Slide 12: Sports Financials & Deep Dive */}
+      {/* Slide 12: Owned IPs */}
+      <Slide>
+        <Card>
+          <div className="flex-1 min-h-0">
+            <OwnedIPsSlide />
+          </div>
+        </Card>
+      </Slide>
+
+      {/* Slide 13: Sports Financials & Deep Dive */}
       <Slide>
         <Card>
           <div className="flex-1 min-h-0">
