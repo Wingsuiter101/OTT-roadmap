@@ -2,6 +2,7 @@ import { Deck } from '@/components/Deck';
 import { Slide } from '@/components/Slide';
 import { ReactNode } from 'react';
 import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 import { PillarsSlide } from '@/components/PillarsSlide';
 import { KPIDashboard } from '@/components/KPIDashboard';
 import { FlywheelSlide } from '@/components/FlywheelSlide';
@@ -63,7 +64,7 @@ export default function Home() {
           
           <div className="flex justify-center mb-4">
         <Image
-              src="/DishHome GO_White.png" 
+              src={getAssetPath("/DishHome GO_White.png")}
               alt="DHGO Logo" 
               width={600} 
               height={180} 
@@ -290,7 +291,7 @@ export default function Home() {
         {/* Full Page Red Background - Behind Everything */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/red-background.png" 
+            src={getAssetPath("/red-background.png")}
             alt="Red Background" 
             fill
             className="object-cover opacity-40"
@@ -312,7 +313,7 @@ export default function Home() {
                     <div className="text-white/60 font-mono text-sm absolute -top-6 right-0">CURRENT</div>
                     {/* DishHome Logo - No Background */}
                     <Image 
-                      src="/DishHome GO_White.png" 
+                      src={getAssetPath("/DishHome GO_White.png")}
                       alt="DishHome Go Logo" 
                       width={280} 
                       height={84} 
@@ -339,7 +340,7 @@ export default function Home() {
                   {/* DHGO Logo - Fills container */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <Image
-                      src="/dh-go-logo.png" 
+                      src={getAssetPath("/dh-go-logo.png")}
                       alt="DHGO Logo" 
                       width={800} 
                       height={320} 
