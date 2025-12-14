@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 
 export const MusicStrategySlide = () => {
   return (
@@ -16,16 +18,16 @@ export const MusicStrategySlide = () => {
        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 h-full pb-4">
           {/* Prong 1: Releases & Studio - Full Height Card */}
           <div className="relative rounded-3xl overflow-hidden group border border-neutral-800 hover:border-blue-500/50 transition-all duration-500">
-             {/* Background Image Placeholder */}
-             <div className="absolute inset-0 bg-neutral-900">
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
-                {/* Simulated Image */}
-                <div className="w-full h-full flex items-center justify-center bg-blue-900/10 group-hover:bg-blue-900/20 transition-colors">
-                    <svg className="w-32 h-32 text-blue-500/20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" /></svg>
-                </div>
-                <div className="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
-                   <span className="text-xs font-mono uppercase tracking-widest text-blue-400">Launchpad & Studio</span>
-                </div>
+             {/* Background Image */}
+             <Image
+               src={getAssetPath("/launch-studio.png")}
+               alt="Launchpad & Studio"
+               fill
+               className="object-cover group-hover:scale-105 transition-transform duration-700"
+             />
+             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
+             <div className="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
+                <span className="text-xs font-mono uppercase tracking-widest text-blue-400">Launchpad & Studio</span>
              </div>
              
              <div className="relative z-20 h-full flex flex-col justify-end p-8 md:p-10">
@@ -50,16 +52,16 @@ export const MusicStrategySlide = () => {
 
           {/* Prong 2: Concert Films - Full Height Card */}
           <div className="relative rounded-3xl overflow-hidden group border border-neutral-800 hover:border-[var(--color-primary)]/50 transition-all duration-500">
-             {/* Background Image Placeholder */}
-             <div className="absolute inset-0 bg-neutral-900">
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
-                 {/* Simulated Image */}
-                 <div className="w-full h-full flex items-center justify-center bg-red-900/10 group-hover:bg-red-900/20 transition-colors">
-                    <svg className="w-32 h-32 text-[var(--color-primary)]/20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
-                </div>
-                <div className="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
-                   <span className="text-xs font-mono uppercase tracking-widest text-[var(--color-primary)]">Premium Events</span>
-                </div>
+             {/* Background Image */}
+             <Image
+               src={getAssetPath("/concert-films.png")}
+               alt="Concert Films"
+               fill
+               className="object-cover group-hover:scale-105 transition-transform duration-700"
+             />
+             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
+             <div className="absolute top-8 right-8 z-20 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
+                <span className="text-xs font-mono uppercase tracking-widest text-[var(--color-primary)]">Premium Events</span>
              </div>
 
              <div className="relative z-20 h-full flex flex-col justify-end p-8 md:p-10">

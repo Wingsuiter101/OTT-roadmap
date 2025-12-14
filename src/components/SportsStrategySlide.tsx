@@ -51,36 +51,31 @@ export const SportsStrategySlide = () => {
       </div>
 
       {/* Column 2: The Engine (Football Focus - Takes up 5 cols) */}
-      <div className="lg:col-span-5 flex flex-col h-full bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 rounded-3xl p-10 relative overflow-hidden">
+      <div className="lg:col-span-5 flex flex-col h-full bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 rounded-3xl p-8 relative overflow-hidden">
          {/* Background pattern */}
          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
          
-         <div className="relative z-10 flex flex-col h-full">
-            <div className="flex items-center gap-4 mb-10">
-                <div className="w-2 h-10 bg-white rounded-full"></div>
-                <h3 className="text-4xl font-bold text-white uppercase tracking-tight">Cadence Engine</h3>
+         <div className="relative z-10 flex flex-col h-full min-h-0 justify-center">
+            <div className="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center text-3xl mb-6 border border-white/20 shrink-0">
+               <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.035M15 6h.01M15 10h.01M15 14h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+               </svg>
             </div>
+            
+            <h4 className="text-3xl md:text-4xl font-bold text-white mb-4">Domestic Football</h4>
+            
+            <p className="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed font-light">
+               While Cricket brings the spikes, Football provides the baseline. It is the consistent <span className="text-white font-semibold">weekly inventory</span> that keeps the platform alive between peaks.
+            </p>
 
-            <div className="flex-1 flex flex-col justify-center">
-               <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center text-4xl mb-8 border border-white/20">
-                  <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.035M15 6h.01M15 10h.01M15 14h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+            <div className="space-y-3">
+               <div className="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors group/card">
+                  <div className="w-2 h-2 rounded-full bg-[var(--color-primary)] group-hover/card:scale-125 transition-transform shrink-0"></div>
+                  <span className="text-gray-300 text-base font-medium leading-tight">Ground Rights + Broadcast Sponsors Model</span>
                </div>
-               <h4 className="text-5xl font-bold text-white mb-6">Domestic Football</h4>
-               <p className="text-2xl text-gray-400 mb-10 leading-relaxed font-light">
-                  While Cricket brings the spikes, Football provides the baseline. It is the consistent <span className="text-white font-semibold">weekly inventory</span> that keeps the platform alive between peaks.
-               </p>
-
-               <div className="space-y-4">
-                  <div className="bg-white/5 border border-white/10 p-6 rounded-2xl flex items-center gap-6 hover:bg-white/10 transition-colors group/card">
-                     <div className="w-3 h-3 rounded-full bg-[var(--color-primary)] group-hover/card:scale-125 transition-transform"></div>
-                     <span className="text-gray-300 text-lg font-medium">Ground Rights + Broadcast Sponsors Model</span>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 p-6 rounded-2xl flex items-center gap-6 hover:bg-white/10 transition-colors group/card">
-                     <div className="w-3 h-3 rounded-full bg-[var(--color-primary)] group-hover/card:scale-125 transition-transform"></div>
-                     <span className="text-gray-300 text-lg font-medium">Broadens Advertiser Base (Beyond Cricket)</span>
-                  </div>
+               <div className="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors group/card">
+                  <div className="w-2 h-2 rounded-full bg-[var(--color-primary)] group-hover/card:scale-125 transition-transform shrink-0"></div>
+                  <span className="text-gray-300 text-base font-medium leading-tight">Broadens Advertiser Base (Beyond Cricket)</span>
                </div>
             </div>
          </div>
